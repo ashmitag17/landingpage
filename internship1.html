@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Apple</title>
+  <style>
+ 
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f7f7f7;
+    }
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+  
+    header {
+      background-color: #333;
+      padding: 22px 0;
+      color: white;
+    }
+
+    .container {
+      width: 90%;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+
+    header .brand-name {
+      font-size: 30px;
+      font-weight: bold;
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 1px; 
+    }
+
+   
+    header .brand-logo {
+      width: 50px; 
+      height: auto;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: inline-block;
+      float: right;
+    }
+
+    header nav ul li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    header nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    header nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    .hero {
+      background: url('https://m.media-amazon.com/images/I/81seDQswYOL.jpg') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: rgb(214, 175, 175);
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 50px;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 18px;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+      margin-top: 10px;
+    }
+
+   
+    .product-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 0;
+      background-color: #fff;
+    }
+
+    .product-info {
+      flex: 1;
+      padding: 20px;
+      max-width: 500px;
+    }
+
+    .product-info h2 {
+      font-size: 36px;
+      color: #333;
+      margin-bottom: 15px;
+    }
+
+    .product-info p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .product-info .price {
+      font-size: 32px;
+      color: #e74c3c;
+      font-weight: bold;
+      margin-bottom: 25px;
+    }
+
+    .add-to-cart-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-radius: 5px;
+    }
+
+    .add-to-cart-btn:hover {
+      background-color: #2980b9;
+    }
+
+    .product-image {
+      flex: 1;
+      text-align: center;
+    }
+
+    .product-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    footer {
+      background-color: #333;
+      padding: 20px 0;
+      color: white;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 14px;
+    }
+
+    @media (max-width: 768px) {
+      .product-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .product-info {
+        margin-bottom: 30px;
+      }
+
+      .product-info h2 {
+        font-size: 28px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header nav ul li {
+        margin-left: 10px;
+      }
+
+      .add-to-cart-btn {
+        width: 100%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+ 
+  <header>
+    <div class="container">
+      <h1>
+        <img src="https://1000logos.net/wp-content/uploads/2017/02/Apple-Logosu.png" alt="Apple Logo" class="brand-logo">
+        <span class="brand-name">Apple</span>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#shop">Shop</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <section class="hero">
+    <div>
+      <h1>Discover the Best Gadgets</h1>
+      <p>Explore the latest technology at unbeatable prices</p>
+    </div>
+  </section>
+
+  <section class="product-section">
+    <div class="container">
+      <div class="product-info">
+        <h2>Perfect Gadget</h2>
+        <p>This gadget is packed with features to make your life easier. Perfect for everyday use, it combines innovation with practicality.</p>
+        <div class="price">$1999.99</div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+      <div class="product-image">
+        <img src="https://store.rsgsolutions.co.in/wp-content/uploads/2024/09/ap1-scaled.jpg" alt="Perfect Gadget">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Apple. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
